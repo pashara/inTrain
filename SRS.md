@@ -14,15 +14,15 @@ InTrain – клиент-серверное приложение, предост
 
 Стартовая страница приложения:
 
-![](https://github.com/Dhoine/MyFilms/blob/master/Mockups/Main%20page%20without%20active%20user.png?raw=true)
+![](https://github.com/pashara/inTrain/blob/master/mocup/SearchPage.png?raw=true)
 
 Страница загруженного расписания:
 
-![](https://github.com/Dhoine/MyFilms/blob/master/Mockups/Login.png?raw=true)
+![](https://github.com/pashara/inTrain/blob/master/mocup/ResultSearch.png?raw=true)
 
 Меню с загруженными расписаниями (избранное):
 
-![](https://github.com/Dhoine/MyFilms/blob/master/Mockups/Registration.png?raw=true)
+![](https://github.com/pashara/inTrain/blob/master/mocup/Menu.png?raw=true)
 
 
 ### 2.3 Характеристики пользователей
