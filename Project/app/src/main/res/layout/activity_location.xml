@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.testapp.LocationActivity">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/stationTextFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Откуда"
+                    android:inputType="textPersonName"
+                    android:text="Минск" />
+
+                <EditText
+                    android:id="@+id/stationTextTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Куда"
+                    android:inputType="textPersonName"
+                    android:text="Койданово" />
+
+
+                <Button
+                    android:id="@+id/searchButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSearchClick"
+                    android:text="Искать" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                        <ListView
+                            android:id="@+id/listView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></ListView>
+
+                        <ProgressBar
+                            android:id="@+id/loaderPanel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:indeterminate="true"
+                            android:visibility="visible" />
+
+                </RelativeLayout>
+        </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

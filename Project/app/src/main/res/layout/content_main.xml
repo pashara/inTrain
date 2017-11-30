@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.testapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/stationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Название станции"
+                app:layout_constraintBottom_toBottomOf="@+id/searchButton"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_span="2"
+                android:fillViewport="false">
+
+                <TextView
+                    android:id="@+id/hello_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </ScrollView>
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
